@@ -1,13 +1,14 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "V1components/*": ["v1/components/*"]
-    },
     "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
-    "lib": ["es6", "dom", "esnext.asynciterable"],
+    "lib": [
+      "es6",
+      "dom",
+      "esnext.asynciterable"
+    ],
     "sourceMap": true,
     "allowJs": false,
     "jsx": "preserve",
@@ -29,7 +30,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
   },
   "exclude": [
     "node_modules",
@@ -40,5 +44,7 @@
     "jest",
     "src/setupTests.js"
   ],
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }
